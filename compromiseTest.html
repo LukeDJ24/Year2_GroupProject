@@ -3,11 +3,11 @@
 <script>
 	function process()
 	{
-		var unProc = nlp(document.getElementById("toProcess").value);
+		var unProc = nlp(document.getElementById("toProcess").value); //Converting input text into the nlp object for further processing.
 		
-		var option = document.getElementById("option").value;
+		var option = document.getElementById("option").value; //collecting the value of the select box.
 		
-		switch(option)
+		switch(option) //Switch for each result of the select statement.
 		{
 			case "plural":
 				plural(unProc);
@@ -39,42 +39,42 @@
 			case "normal":
 				normal(unProc);		
 				break;
-			default:
-				window.alert("ERROR #01");
+			default: //Used when the switch case doesn't find an appropriate value from the select case.
+				window.alert("ERROR #01 -- select statement broken");
 		}
 	}
 	
-	function plural(pluralInput)
+	function plural(pluralInput) //converts words and sentence fragments into plural variants.
 	{
 		var pluralOutput = pluralInput.nouns().toPlural().out('text');
 		window.alert(pluralOutput);
 	}
 	
-	function single(singleInput)
+	function single(singleInput) //converts words and sentence fragments into singular variants. *BROKEN* toSingle() nonfunctional.
 	{
 		var singleOutput = singleInput.nouns().toSingle().out('text');
 		window.alert(singleOutput);
 	}
 	
-	function contract(contractInput)
+	function contract(contractInput) //Adds contractions to work combinations e.g. it is --> it's.
 	{
 		var contractOutput = contractInput.contractions().contract().out('text');
 		window.alert(contractOutput);
 	}
 	
-	function removeContract(contractInput)
+	function removeContract(contractInput) //reverts contracions into seperate words.
 	{
 		var contractOutput = contractInput.contractions().expand().out('text');
 		window.alert(contractOutput);
 	}
 	
-	function negative(negInput)
+	function negative(negInput) //Converts a sentence into it's negative variant.
 	{
 		var negOutput = negInput.sentences().toNegative().out('text');
 		window.alert(negOutput);
 	}
 	
-	function names(nameInput)
+	function names(nameInput) //Extracts names from a sentence or paragraph.
 	{
 		var nameOutput = nameInput.people().out('text');
 		window.alert(nameOutput);
@@ -82,37 +82,36 @@
 	
 	function numbers(numInput)
 	{
-		var numOutput = numInput.values().out('text');
+		var numOutput = numInput.values().out('text'); //extracts numbers from a sentence or paragraph. Can be similarly used to turn direct numbers into letters e.g. 12 --> twelve.
 		window.alert(numOutput);
 	}
 	
 	function future(futureInput)
 	{
-		var futureOutput = futureInput.sentences().toFutureTense().out('text');
+		var futureOutput = futureInput.sentences().toFutureTense().out('text'); //Converst a sentence to the future tense.
 		window.alert(futureOutput);
 	}
 	
 	function past(pastInput)
 	{
-		var pastOutput = pastInput.sentences().toPastTense().out('text');
+		var pastOutput = pastInput.sentences().toPastTense().out('text'); //Converts a sentence to the past tense.
 		window.alert(pastOutput);
 	}
 	
-	function normal(normInput)
+	function normal(normInput) //Removes anomalies and poor editting from paragraphs.
 	{
 		var normOutput = normInput.normalize().out('text');
 		window.alert(normOutput);
 	}
 </script>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Javascript NLP Test</title>
 </head>
 <body>
 	<h1>Compromise</h1>
-	<p><input type="text" id ="toProcess"></p>
+	<p><input type="text" id ="toProcess"></p> <!-- Simple input form consisting of a text box, button and select drop down menu. -->
 	<p><button onclick="process()">Process!</button></p>
 	<select id = "option">
 		<option value="plural">Pluralise</option>
