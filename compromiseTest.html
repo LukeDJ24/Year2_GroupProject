@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+<script>
+	function process()
+	{
+		var unProc = nlp(document.getElementById("toProcess").value);
+		
+		var option = document.getElementById("option").value;
+		
+		switch(option)
+		{
+			case "plural":
+				plural(unProc);
+				break;
+			case "single":
+				single(unProc);
+				break;
+			case "contract":
+				contract(unProc);
+				break;
+			case "removeContract":
+				removeContract(unProc);
+				break;
+			case "negative":
+				negative(unProc);
+				break;
+			case "names":
+				names(unProc);
+				break;
+			case "numbers":
+				numbers(unProc);
+				break;
+			case "future":
+				future(unProc);
+				break;
+			case "past":
+				past(unProc);	
+				break;
+			case "normal":
+				normal(unProc);		
+				break;
+			default:
+				window.alert("ERROR #01");
+		}
+	}
+	
+	function plural(pluralInput)
+	{
+		var pluralOutput = pluralInput.nouns().toPlural().out('text');
+		window.alert(pluralOutput);
+	}
+	
+	function single(singleInput)
+	{
+		var singleOutput = singleInput.nouns().toSingle().out('text');
+		window.alert(singleOutput);
+	}
+	
+	function contract(contractInput)
+	{
+		var contractOutput = contractInput.contractions().contract().out('text');
+		window.alert(contractOutput);
+	}
+	
+	function removeContract(contractInput)
+	{
+		var contractOutput = contractInput.contractions().expand().out('text');
+		window.alert(contractOutput);
+	}
+	
+	function negative(negInput)
+	{
+		var negOutput = negInput.sentences().toNegative().out('text');
+		window.alert(negOutput);
+	}
+	
+	function names(nameInput)
+	{
+		var nameOutput = nameInput.people().out('text');
+		window.alert(nameOutput);
+	}
+	
+	function numbers(numInput)
+	{
+		var numOutput = numInput.values().out('text');
+		window.alert(numOutput);
+	}
+	
+	function future(futureInput)
+	{
+		var futureOutput = futureInput.sentences().toFutureTense().out('text');
+		window.alert(futureOutput);
+	}
+	
+	function past(pastInput)
+	{
+		var pastOutput = pastInput.sentences().toPastTense().out('text');
+		window.alert(pastOutput);
+	}
+	
+	function normal(normInput)
+	{
+		var normOutput = normInput.normalize().out('text');
+		window.alert(normOutput);
+	}
+</script>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript NLP Test</title>
+</head>
+<body>
+	<h1>Compromise</h1>
+	<p><input type="text" id ="toProcess"></p>
+	<p><button onclick="process()">Process!</button></p>
+	<select id = "option">
+		<option value="plural">Pluralise</option>
+		<option value="single">Singular</option>
+		<option value="contract">Add Contractions</option>
+		<option value="removeContract">Remove Contractions</option>
+		<option value="negative">Turn Negative</option>
+		<option value="names">Find Names</option>
+		<option value="numbers">Find Numbers</option>
+		<option value="future">Future Tense</option>
+		<option value="past">Past Tense</option>
+		<option value="normal">Normalise</option>
+	</select>
+</body>
+</html>
