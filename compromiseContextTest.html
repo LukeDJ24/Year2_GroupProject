@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+<script>
+	function procNouns()
+	{
+		var lexicon = 
+		{
+			'timetable':'Noun'
+		}
+		
+		/*
+		Test Phrases:
+		Can I see my timetable
+		What's the time
+		Who is my personal tutor
+		*/
+		
+		var unProc = nlp(document.getElementById("toProcess").value, lexicon); //Converting input text into the nlp object for further processing.
+		
+		nouns = unProc.nouns().out('list');
+		
+		for(i = 0; i < nouns.length; i++) //Currently outputs nouns on a letter by letter basis. e.g. Tree = t r e e 
+		{
+			//window.alert(nouns[i]);
+			switch(nouns[i])
+			{
+				case "timetable":
+					//showTimetable
+					window.alert("Timetable Display");
+					break;
+				case "time":
+					//showLocalTime
+					window.alert("Time Display");
+					break;
+				case "tutor":
+					//showTutor()
+					window.alert("Tutor Display");
+					break;
+			}
+			
+		}
+		
+		window.alert(nouns);
+	}
+</script>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript NLP Test</title>
+</head>
+<body>
+	<h1>Compromise context grab.</h1>
+	<p><input type="text" id ="toProcess"></p> <!-- Simple input form consisting of a text box and button. -->
+	<p><button onclick="procNouns()">Process!</button></p>
+</body>
+</html>
