@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+  if($_SESSION['login'] != "OK") 
+  {
+    header('Location: ../index.php');
+    exit();
+  }
+?> 
 <html lang="en">
 
   <head>
