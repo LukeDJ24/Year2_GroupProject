@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+  if($_SESSION['login'] != "OK") 
+  {
+    header('Location: ../index.php');
+    exit();
+  }
+?> 
 <html lang="en">
 
   <head>
@@ -6,23 +14,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Cardiff University LC</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styling.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styling.css" rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" />
   </head>
 
   <body>
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/lclogo.png" alt="learning central logo" width="200px" height="30px"></a>
+        <a class="navbar-brand" href="site.php"><img src="../images/lclogo.png" alt="learning central logo" width="200px" height="30px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="site.php">Home</a>
             </li>
           </ul>
         </div>
