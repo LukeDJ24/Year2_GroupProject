@@ -145,7 +145,7 @@
       </div>
 
     <div id="live-chat"> <!-- Start chat bot integration -->
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bot">Personal Tutorbot</button>
+      <button id="tutor-collapse" type="button" class="btn btn-info collapsed" data-toggle="collapse" data-target="#bot">TutorBot</button>
       <div id="bot" class="collapse">
         <iframe
             width="300"
@@ -159,7 +159,7 @@
     </div>
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Learning Central Cardiff University 2017</p>
+        <p class="m-0 text-center text-white">Learning Central - Cardiff University - 2018</p>
       </div>
     </footer>
     
