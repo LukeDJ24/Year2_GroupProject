@@ -4,23 +4,23 @@
    
    	if($_SERVER["REQUEST_METHOD"] == "POST") 
    	{
-		$myusername = mysqli_real_escape_string($db,$_POST['StudentID']);
-		$mypassword = mysqli_real_escape_string($db,$_POST['Password']); 
+  		$myusername = mysqli_real_escape_string($db,$_POST['StudentID']);
+  		$mypassword = mysqli_real_escape_string($db,$_POST['Password']); 
 
-		$sql = "SELECT StudentID FROM Student WHERE StudentID = '$myusername' and Password = '$mypassword'";
-		$result = mysqli_query($db,$sql);
-		$count = mysqli_num_rows($result);
+  		$sql = "SELECT StudentID FROM Student WHERE StudentID = '$myusername' and Password = '$mypassword'";
+  		$result = mysqli_query($db,$sql);
+  		$count = mysqli_num_rows($result);
 
 		if($count == 1) 
 		{
-     		$_SESSION['login'] = "OK";
+   		$_SESSION['login'] = "OK";
 			$_SESSION['username'] = $myusername;
 			header("location: site/site.php");
 		}
-	  	else 
-	  	{
-			echo("The username/password you entered is incorrect.");
-	  	}
+  	else 
+  	{
+		  echo("The username/password you entered is incorrect.");
+  	}
 	}
 ?>
 <html>
@@ -47,8 +47,8 @@
             <div><b>Cardiff University Login</b></div><br>
             <div>
                <form action = "" method = "post">
-                  <label>Username  :</label> <input type = "text" name = "username" class = "box"/><br /><br />
-                  <label>Password  :</label> <input type = "password" name = "password" class = "box" /><br/><br />
+                  <label>Username  :</label> <input type = "text" name = "StudentID" class = "box"/><br /><br />
+                  <label>Password  :</label> <input type = "Password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
                </form>
             </div>
