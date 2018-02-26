@@ -7,7 +7,7 @@
 		$myusername = mysqli_real_escape_string($db,$_POST['username']);
 		$mypassword = mysqli_real_escape_string($db,$_POST['password']); 
 
-		$sql = "SELECT ID FROM logins WHERE username = '$myusername' and password = '$mypassword'";
+		$sql = "SELECT StudentID FROM Student WHERE StudentID = '$myusername' and Password = '$mypassword'";
 		$result = mysqli_query($db,$sql);
 		$count = mysqli_num_rows($result);
 
