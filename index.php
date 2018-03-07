@@ -48,7 +48,7 @@
             <div>
                <form action = "" method = "post">
                   <label>Username  :</label> <input type = "text" name = "StudentID" class = "box"/><br /><br />
-                  <label>Password  :</label> <input type = "Password" name = "password" class = "box" /><br/><br />
+                  <label>Password  :</label> <input type = "Password" name = "Password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
                </form>
             </div>
