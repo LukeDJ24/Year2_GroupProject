@@ -56,21 +56,25 @@
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#">Announcements</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text">
+                > CM2303 Coursework Information - "Hello all, I have some information about..."
+                <br> >  CM2203 Guest Lecture - "Hello all, I have some information about..."
+                <br> > CM2303 Coursework Information - "Hello all, I have some information about..."
+                <br> >  CM2203 Guest Lecture - "Hello all, I have some information about..."
+              </p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="http://www.validatum.com/media/images/Algorithm.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#">CM2303 - Algorithms and Data Structures</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -78,10 +82,10 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="https://www.extremetech.com/wp-content/uploads/2015/09/quantum-dots-head.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#">CM2203 - Informatics</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
             </div>
@@ -89,10 +93,10 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="http://www.engineersjournal.ie/wp-content/uploads/2013/10/Netework.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Four</a>
+                <a href="#">CM2302 - Networks and Pervasive Computing</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -100,10 +104,10 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="https://i.ytimg.com/vi/FKs7DND1kkg/maxresdefault.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Five</a>
+                <a href="#">CM2105 - Data Processing and Visualisation</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -111,10 +115,10 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="https://lifeboat.com/blog.images/technology-becomes-us-the-age-of-human-computer-interaction.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Six</a>
+                <a href="#">CM2101 - Human Computer Interaction</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
             </div>
@@ -122,10 +126,10 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="https://gs-post-images.grdp.co/img1453964930134-90.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Seven</a>
+                <a href="#">CM2207 - Intro to Theory of Computation</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -133,19 +137,38 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
+            <a href="#"><img class="card-img-top" src="http://www.washington.edu/news/files/2017/09/group-work-photo.jpg" alt=""></a>
+              <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Eight</a>
+                <a href="#">CM2305 - Group Project</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
             </div>
-          </div>
         </div>
       </div>
 
+  <div class="modal-overlay"> </div>
+
+  <div class="modal">
+    <header>
+      <h2>Personal Tutor Chatbot</h2>
+    </header>
+    <section>
+        <p>Hello I am your personal tutor chatbot!
+          <br><br>if you would like to utilise my capabilities, 
+        then please accept the terms and conditions.
+        <br> <a href="termsandconditions.php" target="_blank">Terms and Conditions </a></p>
+    </section>
+  <button type="button" class="btn modal-toggle-no" onclick="ToggleNo()"> No </button>
+  <button type="button" class="btn modal-toggle-yes" onclick="ToggleYes()"> Yes </button>
+  </div>
+
+
     <div id="live-chat"> <!-- Start chat bot integration -->
-      <button id="tutor-collapse" type="button" class="btn btn-info collapsed" data-toggle="collapse" data-target="#bot">TutorBot</button>
+     <div class="num_notifs">
+        !!!
+      </div>
+      <button id="tutor-collapse" type="button" class="btn btn-info collapsed toggle-modal" data-toggle="collapse" data-target="#bot" onclick="ToggleModal()">TutorBot</button>
       <div id="bot" class="collapse">
         <iframe
             width="300"
